@@ -6,6 +6,13 @@ require 'header.php';
     <h1>About</h1>
 </header>
 
+<nav>
+    <li>
+        <a href="index.php">Start</a>
+        <a href="about.php">About</a>
+    </li>
+</nav>
+
 <p>Name: Patricia Loayza Frykberg</p>
 <p>Age: 39</p>
 <p>Class: Programming - PHP</p>

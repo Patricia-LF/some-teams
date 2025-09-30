@@ -8,8 +8,16 @@ require 'data.php';
     <h1>Champions League teams</h1>
 </header>
 
+<nav>
+    <li>
+        <a href="index.php">Start</a>
+        <a href="about.php">About</a>
+    </li>
+</nav>
+
 <main>
 
+    <a href="About"></a>
     <ul>
         <?php foreach ($teams as $key => $value) { ?>
             <li>
