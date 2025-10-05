@@ -32,11 +32,16 @@ $team = $teams[$teamName];
 
     <p><strong>City:</strong> <?= $team['city']; ?></p>
 
-    <p><strong>Opponents:</strong> <?= $team['opponents']; ?></p>
+    <p><strong>Opponents:</strong></p>
+    <ul>
+        <?php foreach ($team['opponents'] as $opponent) { ?>
+            <li><?= $opponent; ?></li>
+        <?php } ?>
+    </ul>
 
     <p><strong>Website:</strong>
-        <a href="<?= $team['website']; ?>" target="_blank">
-            <?= $team['website']; ?>
+        <a href="<?= $team['url']; ?>" target="_blank">
+            <?= $team['url']; ?>
         </a>
     </p>
 
