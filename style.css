@@ -1,6 +1,4 @@
 body {
-    margin-left: 40px;
-    margin-right: 40px;
     background-color: rgb(227, 236, 255);
 }
 
@@ -8,6 +6,11 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
+}
+
+.header-box img {
+    width: 100vw;
+    overflow: auto;
 }
 
 nav {
@@ -38,6 +41,13 @@ nav a:hover {
     display: flex;
     justify-content: center;
     position: relative;
+}
+
+.nav-container a {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .teams {
@@ -89,15 +99,61 @@ article:hover {
 article img {
     width: 70%;
     height: auto;
-    margin-bottom: 10px; /* Mellanrum mellan bild och text */
+    margin-bottom: 10px auto; /* Mellanrum mellan bild och text */
+    margin-top: inherit;
 }
 
 article p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
+.team-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team-detail p {
+    font-size: 20px;
+    color: #42629e;
+    width: 100%; /* Eller en fast bredd, t.ex. 500px */
+    max-width: 400px; /* Begränsa bredden */
+    text-align: left; 
+}
 
+.team-detail img {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 20px;
+}
 
+.team-detail p {
+    font-size: 20px;
+    color: #42629e;
+    margin: 14px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #42629e;
+}
+
+.about-container {
+    margin: 40px;
+}
+
+.about-container p {
+    font-size: 20px;
+    color: #42629e;
+}
+
+ul {
+    font-size: 20px;
+    color: #42629e;
+    width: 100%; /* Eller en fast bredd, t.ex. 500px */
+    max-width: 400px; /* Begränsa bredden */
+    text-align: left;
+    margin-top: 0;
+}
 
 
 
