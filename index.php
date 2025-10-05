@@ -5,29 +5,36 @@ require 'data.php';
 ?>
 
 <header>
-    <h1>Champions League teams</h1>
+    <div class="header-box">
+        <img src="canva-header.png" alt="header-picture">
+    </div>
 </header>
 
-<nav>
-    <li>
+<div class="nav-container">
+    <nav>
         <a href="index.php">Start</a>
         <a href="about.php">About</a>
-    </li>
-</nav>
+    </nav>
+</div>
 
 <main>
 
-    <a href="About"></a>
-    <ul>
-        <?php foreach ($teams as $key => $value) { ?>
-            <li>
-                <?php for ($i = 0; $i < count($teams); $i++) { ?>
-                    <?php echo $key[$i]; ?> <?php }
-                                    }; ?>
-            </li>
-    </ul>
+    <div class="list-box-container">
+        <?php foreach ($teams as $team => $value) { ?>
+            <a href="team-info.php?team=<?= $team; ?>" class="team-link">
+                <article>
+                    <img src="<?= $value['logo']; ?>" alt="<?= $team; ?> logo" />
+                    <p><?= $team; ?></p>
+                </article>
+            </a>
+        <?php } ?>
+    </div>
 
 </main>
 
+
 <?php
 require 'footer.php';
+
+/*<a href="teams-info.php"><?php "$team[$i]"; ?></a>
+            <link rel="<?= "$team[$i] : ['logo'][$i] ." ?>"> */
