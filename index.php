@@ -20,7 +20,9 @@ require 'data.php';
 <main>
 
     <div class="list-box-container">
-        <?php foreach ($teams as $team => $value) { ?>
+        <?php
+        ksort($teams);
+        foreach ($teams as $team => $value) { ?>
             <a href="team-info.php?team=<?= $team; ?>" class="team-link">
                 <article>
                     <img src="<?= $value['logo']; ?>" alt="<?= $team; ?> logo" />
