@@ -3,20 +3,26 @@ require 'header.php';
 ?>
 
 <header>
-    <h1>About</h1>
+    <div class="header-box">
+        <img src="canva-header.png" alt="header-picture">
+    </div>
 </header>
 
-<nav>
-    <li>
+<div class="nav-container">
+    <nav>
         <a href="index.php">Start</a>
         <a href="about.php">About</a>
-    </li>
-</nav>
+    </nav>
+</div>
 
-<p>Name: Patricia Loayza Frykberg</p>
-<p>Age: 39</p>
-<p>Class: Programming - PHP</p>
-<p>Assignent: Some teams</p>
-<p>One.com domain:
-    <link href="wu-project.se">
-</p>
+<div class="about-container">
+    <h1>About</h1>
+
+    <p><strong>Name:</strong> Patricia Loayza Frykberg</p>
+    <p><strong>Age:</strong> 39</p>
+    <p><strong>Class:</strong> Programming - PHP</p>
+    <p><strong>Assignent:</strong> Some teams</p>
+    <p><strong>One.com domain:</strong>
+        <link href="wu-project.se">
+    </p>
+</div>
