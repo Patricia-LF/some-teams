@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(227, 236, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 .header-box {
@@ -20,21 +20,30 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #42629e;
+    background: linear-gradient(to bottom, blue, rgb(115, 161, 254), rgb(191, 230, 255), rgb(237, 249, 255), rgb(191, 230, 255), rgb(115, 161, 254), blue);
     gap: 40px;
+    border-bottom: solid lightgrey;
+    border-top: solid lightgray;
 }
 
 nav a {
-    color: white;
+    color: #000000;
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 25px;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    background: linear-gradient(to bottom, rgb(237, 249, 255), rgb(237, 249, 255));
+    border: solid black;
+    border-radius: 50px;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    align-content: center;
 }
 
 nav a:hover {
-    font-size: 28px;
-    text-shadow: 4px 4px rgb(31, 31, 46);
+    font-size: 32px;
+    text-shadow: 4px 4px 5px rgb(124, 124, 124);
 }
 
 .nav-container {
@@ -43,17 +52,10 @@ nav a:hover {
     position: relative;
 }
 
-.nav-container a {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-}
-
 .teams {
     height: 200px;
     width: 150px;
-    background-color: rgb(175, 210, 254)
+    /*background-color: #ddc9d8;*/
 }
 
 .team-link {
@@ -68,55 +70,74 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-article {
-    height: 150px;
-    width: 100px;
-    padding: 20px;
-    margin: 20px;
-    background-color: aliceblue;
-    display: flex;
-    flex-direction: column; /* Ändrat: gör så bild och text staplas vertikalt */
-    justify-content: center;
-    align-items: center;
-    border: solid #42629e;
-    border-radius: 15%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
+.list-box-container h1 {
+    font-family: "Zalando Sans Expanded", sans-serif;
     font-weight: bold;
-    color: #42629e;
-    text-align: center;
-    overflow-wrap: break-word;
+    position: relative;
+    /*color: rgb(8, 8, 8);*/
 }
 
-article:hover {
-    box-shadow: 6px 6px 10px rgb(31, 31, 46);
-    transform: translateY(-2px); /* Liten extra effekt */
-    transition: all 0.3s ease;
-    text-shadow: 4px 4px 10px rgb(152, 161, 179);
+section {
+    height: 200px;
+    width: 150px;
+    padding: 20px;
+    margin: 10px;
+    background: linear-gradient(to bottom, rgb(237, 249, 255), rgb(191, 230, 255), rgb(115, 161, 254), blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+section:hover {
+    box-shadow: 6px 6px 10px #013cfc;
+    /*transform: translateY(-2px); /* Liten extra effekt */
+    transition: transform 0.3s ease;
+    text-shadow: 4px 4px 5px rgb(22, 0, 159);
     font-size: 18px;
 }
 
-article img {
+section img {
     width: 70%;
     height: auto;
-    margin-bottom: 10px auto; /* Mellanrum mellan bild och text */
+    margin-bottom: auto; /* Mellanrum mellan bild och text */
     margin-top: inherit;
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
 }
 
-article p {
+section:hover img {
+    width: 80%;
+}
+
+section p {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: normal;
     margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #eff5fd;
+    text-align: center;
+    overflow-wrap: break-word;
 }
 
 .team-detail {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 40px;
+    background: linear-gradient(to right, rgb(237, 249, 255), rgb(191, 230, 255));
+    padding-bottom: 20px;
+    border-radius: 50px;
 }
 .team-detail p {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: normal;
     font-size: 20px;
-    color: #42629e;
-    width: 100%; /* Eller en fast bredd, t.ex. 500px */
-    max-width: 400px; /* Begränsa bredden */
+    color: #080808;
+    width: 100%;
+    max-width: 400px;
     text-align: left; 
 }
 
@@ -126,36 +147,84 @@ article p {
     margin-bottom: 20px;
 }
 
-.team-detail p {
-    font-size: 20px;
-    color: #42629e;
-    margin: 14px;
+h1 {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(11, 11, 11);
 }
 
-h1 {
-    font-size: 40px;
-    color: #42629e;
+.about-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
 }
 
 .about-container {
+    flex: 1;
+    max-width: 600px;
     margin: 40px;
+    background: linear-gradient(to right, rgb(237, 249, 255), rgb(191, 230, 255));
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    align-items: center;
+    border-radius: 50px;
 }
 
 .about-container p {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: normal;
     font-size: 20px;
-    color: #42629e;
+    color: #0a0a0a;
+    width: 100%; /* Eller en fast bredd, t.ex. 500px */
+    max-width: 400px; /* Begränsa bredden */
+    text-align: left;
+}
+
+.profile img{
+    height: auto;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50px;
 }
 
 ul {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: normal;
     font-size: 20px;
-    color: #42629e;
+    color: #050505;
     width: 100%; /* Eller en fast bredd, t.ex. 500px */
     max-width: 400px; /* Begränsa bredden */
     text-align: left;
     margin-top: 0;
 }
 
+.teams-container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    padding-bottom: 20px;
+    border-radius: 25px;
+}
 
+.teams-container h1 {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(4, 4, 4);
+    text-align: center;
+}
 
+footer {
+    color: #080808;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 20px;
+}
 
 

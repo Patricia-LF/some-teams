@@ -6,7 +6,7 @@ require 'data.php';
 
 <header>
     <div class="header-box">
-        <img src="canva-header.png" alt="header-picture">
+        <img src="3.png" alt="header-picture">
     </div>
 </header>
 
@@ -19,19 +19,21 @@ require 'data.php';
 
 <main>
 
-    <div class="list-box-container">
-        <?php
-        ksort($teams);
-        foreach ($teams as $team => $value) { ?>
-            <a href="team-info.php?team=<?= $team; ?>" class="team-link">
-                <article>
-                    <img src="<?= $value['logo']; ?>" alt="<?= $team; ?> logo" />
-                    <p><?= $team; ?></p>
-                </article>
-            </a>
-        <?php } ?>
+    <div class="teams-container">
+        <h1>Teams</h1>
+        <div class="list-box-container">
+            <?php
+            ksort($teams);
+            foreach ($teams as $team => $value) { ?>
+                <a href="team-info.php?team=<?= $team; ?>" class="team-link">
+                    <section>
+                        <img src="<?= $value['logo']; ?>" alt="<?= $team; ?> logo" />
+                        <p><?= $team; ?></p>
+                    </section>
+                </a>
+            <?php } ?>
+        </div>
     </div>
-
 </main>
 
 

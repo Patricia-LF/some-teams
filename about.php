@@ -15,14 +15,19 @@ require 'header.php';
     </nav>
 </div>
 
-<div class="about-container">
-    <h1>About</h1>
+<div class="about-wrapper">
+    <div class="about-container">
+        <h1>About</h1>
+        <p><strong>Name:</strong> Patricia Loayza Frykberg</p>
+        <p><strong>Age:</strong> 39</p>
+        <p><strong>Class:</strong> Programming - PHP</p>
+        <p><strong>Assignent:</strong> Some teams</p>
+        <p><strong>One.com domain:</strong>
+            <link href="wu-project.se">
+        </p>
+    </div>
 
-    <p><strong>Name:</strong> Patricia Loayza Frykberg</p>
-    <p><strong>Age:</strong> 39</p>
-    <p><strong>Class:</strong> Programming - PHP</p>
-    <p><strong>Assignent:</strong> Some teams</p>
-    <p><strong>One.com domain:</strong>
-        <link href="wu-project.se">
-    </p>
+    <div class="profile">
+        <img src="Profilbild.jpg" alt="Profilbild">
+    </div>
 </div>
