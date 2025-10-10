@@ -4,12 +4,6 @@ require 'header.php';
 require 'data.php';
 ?>
 
-<!--<header>
-    <div class="header-box">
-        <img src="CL.jpg" alt="header-picture">
-    </div>
-</header>-->
-
 <div class="nav-container">
     <div class="nav-cont-img"><img src="logga.png" alt="header-picture"></div>
     <nav>
@@ -40,6 +34,3 @@ require 'data.php';
 
 <?php
 require 'footer.php';
-
-/*<a href="teams-info.php"><?php "$team[$i]"; ?></a>
-            <link rel="<?= "$team[$i] : ['logo'][$i] ." ?>"> */
