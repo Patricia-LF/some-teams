@@ -7,7 +7,6 @@ header h1 {
   color: #000000;
   display: flex;
   align-items: center;
-  align-items: center;
   justify-content: center;
 }
 
@@ -32,16 +31,16 @@ header h1 {
 }
 
 .header-box img {
-  height: 70px;
+  height: 100px;
   align-self: center;
   left: 20px;
+  position: relative;
 }
 
 .uefa-link {
     display: block;
     width: 100vw;
     text-align: right;
-    right: 20px;
 }
 
 .uefa-link a:hover {
@@ -60,6 +59,7 @@ header h1 {
     font-family: "Zalando Sans Expanded", sans-serif;
     font-weight: bold;
     color: #042afc;
+    padding: 10px;
 }
 
 nav {
@@ -201,7 +201,6 @@ section:hover img {
 
 section p {
     font-family: "Zalando Sans Expanded", sans-serif;
-    font-weight: normal;
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: bold;
