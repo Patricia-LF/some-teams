@@ -2,15 +2,64 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+header h1 {
+  font-size: 30px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 12px;
+    justify-self: center;
+  }
+}
+
 .header-box {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;  
     position: relative;
+    padding: 10px;
 }
 
 .header-box img {
+  height: 70px;
+  align-self: center;
+  left: 20px;
+}
+
+.uefa-link {
+    display: block;
     width: 100vw;
-    overflow: auto;
+    text-align: right;
+    right: 20px;
+}
+
+.uefa-link a:hover {
+  text-decoration: none;
+  text-shadow: 4px 4px 5px rgb(115, 161, 254);
+}
+
+@media (max-width: 768px) {
+  .header-box img {
+    height: 50px;
+    left: 2px
+  }
+}
+
+.header-box a {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: bold;
+    color: #042afc;
 }
 
 nav {
@@ -25,7 +74,7 @@ nav {
 }
 
 nav a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-family: "Zalando Sans Expanded", sans-serif;
     font-weight: normal;
@@ -36,6 +85,7 @@ nav a {
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
+    border-radius: 25px;
 }
 
 @media (max-width: 768px) {
@@ -79,23 +129,7 @@ nav a:hover {
     justify-content: center;
     position: relative;
     align-items: center;
-}
-
-.nav-cont-img {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 40px;
-    height: auto;
-    width: 70px;
-    padding: 10px;
-}
-
-@media (max-width: 768px) {
-  .nav-cont-img {
-    width: 50px;
-    left: 2px
-  }
+    background-color: #000000;
 }
 
 .team-link {
@@ -202,18 +236,6 @@ section p {
     text-align: left; 
 }
 
-@media (max-width: 768px) {
-  .team-detail p, .about-container p, ul {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 480px) {
-  .team-detail p, .about-container p, ul {
-    font-size: 15px;
-  }
-}
-
 .team-detail img {
     height: 250px;
     width: 250px;
@@ -267,12 +289,6 @@ h1 {
   }
 }
 
-@media (max-width: 480px) {
-  .about-container {
-    padding: 20px;
-  }
-}
-
 .about-container p {
     font-family: "Zalando Sans Expanded", sans-serif;
     font-weight: normal;
@@ -316,6 +332,18 @@ ul {
     max-width: 400px;
     text-align: left;
     margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .team-detail p, .about-container p, ul {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-detail p, .about-container p, ul {
+    font-size: 15px;
+  }
 }
 
 .teams-container {
