@@ -2,8 +2,17 @@
 require 'header.php';
 ?>
 
+<header>
+    <div class="header-box">
+        <img src="logga.png" alt="header-picture">
+        <div class="uefa-link">
+            <a href="https://www.uefa.com/womenschampionsleague/">UEFA.com</a>
+            <h1>UEFA Women's Champions League</h1>
+        </div>
+    </div>
+</header>
+
 <div class="nav-container">
-    <div class="nav-cont-img"><img src="logga.png" alt="header-picture"></div>
     <nav>
         <a href="index.php">Start</a>
         <a href="about.php">About</a>

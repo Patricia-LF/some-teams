@@ -6,7 +6,11 @@ require 'data.php';
 
 <header>
     <div class="header-box">
-        <img src="header-img.png" alt="header-picture">
+        <img src="logga.png" alt="header-picture">
+        <div class="uefa-link">
+            <a href="https://www.uefa.com/womenschampionsleague/">UEFA.com</a>
+            <h1>UEFA Women's Champions League</h1>
+        </div>
     </div>
 </header>
 
