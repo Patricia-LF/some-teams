@@ -4,13 +4,14 @@ require 'header.php';
 require 'data.php';
 ?>
 
-<header>
+<!--<header>
     <div class="header-box">
-        <img src="3.png" alt="header-picture">
+        <img src="CL.jpg" alt="header-picture">
     </div>
-</header>
+</header>-->
 
 <div class="nav-container">
+    <div class="nav-cont-img"><img src="logga.png" alt="header-picture"></div>
     <nav>
         <a href="index.php">Start</a>
         <a href="about.php">About</a>
