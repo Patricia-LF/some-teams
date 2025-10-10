@@ -6,7 +6,7 @@ require 'data.php';
 
 <header>
     <div class="header-box">
-        <img src="canva-header.png" alt="header-picture">
+        <img src="header-img.png" alt="header-picture">
     </div>
 </header>
 
