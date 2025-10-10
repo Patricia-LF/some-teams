@@ -155,12 +155,14 @@ section img {
     height: auto;
     margin-bottom: auto;
     margin-top: inherit;
+    max-height: 100px;
+    object-fit: contain;
     transform: translateY(-2px);
     transition: transform 0.3s ease;
 }
 
 section:hover img {
-    width: 80%;
+    transform: scale(1.15);
 }
 
 section p {
@@ -188,13 +190,7 @@ section p {
   .team-detail {
     padding: 20px;
   }
-}
-
-@media (max-width: 480px) {
-  .team-detail {
-    padding: 20px;
-  }
-}
+}  
 
 .team-detail p {
     font-family: "Zalando Sans Expanded", sans-serif;
@@ -358,5 +354,3 @@ footer {
     text-align: center;
     padding-bottom: 20px;
 }
-
-
