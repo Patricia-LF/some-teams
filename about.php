@@ -35,3 +35,6 @@ require 'header.php';
         <img src="Profilbild.jpg" alt="Profilbild">
     </div>
 </div>
+
+<?php
+require 'footer.php';
