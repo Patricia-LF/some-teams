@@ -28,7 +28,7 @@ require 'header.php';
         <p><strong>Name:</strong> Patricia Loayza Frykberg</p>
         <p><strong>Age:</strong> 39</p>
         <p><strong>Class:</strong> Programming - PHP</p>
-        <p><strong>Assignent:</strong> Some teams</p>
+        <p><strong>Assignment:</strong> Some teams</p>
         <p><strong>Github username:</strong> Patricia-LF</p>
         <p><strong>Description:</strong> This is our first assignment in programming, where we had to create a website about The women's Champions League teams, using an already made array about the teams. I also created a page with more information about each team, and this page with information about me as the creator of this website.
             I'm a Real-Madrid fan, and have followed the men's team for several years.</p>
