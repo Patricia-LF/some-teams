@@ -22,6 +22,9 @@ require 'header.php';
 <div class="about-wrapper">
     <div class="about-container">
         <h1>About</h1>
+        <div class="profile">
+            <img src="Profilbild.jpg" alt="Profilbild">
+        </div>
         <p><strong>Name:</strong> Patricia Loayza Frykberg</p>
         <p><strong>Age:</strong> 39</p>
         <p><strong>Class:</strong> Programming - PHP</p>
@@ -29,10 +32,6 @@ require 'header.php';
         <p><strong>Github username:</strong> Patricia-LF</p>
         <p><strong>Description:</strong> This is our first assignment in programming, where we had to create a website about The women's Champions League teams, using an already made array about the teams. I also created a page with more information about each team, and this page with information about me as the creator of this website.
             I'm a Real-Madrid fan, and have followed the men's team for several years.</p>
-    </div>
-
-    <div class="profile">
-        <img src="Profilbild.jpg" alt="Profilbild">
     </div>
 </div>
 
