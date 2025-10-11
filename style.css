@@ -19,14 +19,12 @@ header h1 {
 @media (max-width: 480px) {
   header h1 {
     font-size: 12px;
-    justify-self: center;
   }
 }
 
 .header-box {
     display: flex;
     justify-content: space-around;  
-    position: relative;
     padding: 10px;
 }
 
@@ -106,7 +104,6 @@ nav a {
 
 nav a:hover {
     font-size: 32px;
-    border-radius: 25px;
     background-color: #85c6feb0;
     transition: 0.3s ease;
     text-shadow: 4px 4px 5px rgb(115, 161, 254);
@@ -237,22 +234,8 @@ section p {
 
 .team-detail img {
     height: 250px;
-    width: 250px;
+    width: auto;
     margin-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-  .team-detail img {
-    height: 200px;
-    width: 200px;
-  }
-}
-
-@media (max-width: 480px) {
-  .team-detail img {
-    height: 150px;
-    width: 150px;
-  }
 }
 
 h1 {
@@ -263,18 +246,25 @@ h1 {
 }
 
 .about-wrapper {
-    display: flex;
-    align-items: flex-start;;
+    /*display: flex;
+    align-items: flex-start;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+}*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    background: linear-gradient(to bottom, rgb(237, 249, 255), rgb(73 127 245));
+    padding-bottom: 20px;
+    border-radius: 50px;
 }
 
 .about-container {
     flex: 1;
     max-width: 600px;
-    margin: 40px;
-    background: linear-gradient(to bottom, rgb(237, 249, 255), rgb(73 127 245));
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
@@ -299,26 +289,22 @@ h1 {
 }
 
 .profile img{
-    height: auto;
-    width: 250px;
-    margin-right: 40px;
-    margin-top: 40px;
+   height: 250px;
+    width: auto; 
+    margin-bottom: 20px; 
     border-radius: 50px;
 }
 
 @media (max-width: 768px) {
-  .profile img {
-    width: 200px;
-    margin: auto;
-    margin-top: 40px;
+  .team-detail img, .profile img {
+    height: 200px;
+
   }
 }
 
 @media (max-width: 480px) {
-  .profile img {
-    width: 150px;
-    margin: auto;
-    margin-top: 40px;
+  .team-detail img, .profile img {
+    height: 150px;
   }
 }
 
