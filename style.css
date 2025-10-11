@@ -196,6 +196,11 @@ section:hover img {
     transform: scale(1.15);
 }
 
+img[alt*="Atletico"],
+img[alt*="Pölten"] {
+  mix-blend-mode: darken;
+}
+
 section p {
     font-family: "Zalando Sans Expanded", sans-serif;
     margin-bottom: 20px;
